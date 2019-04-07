@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<items>
+  <sword id="111" name="long_sword">
+    <hitpoints>10</hitpoints>
+    <length>12</length>
+    <weight>15.6</weight>
+    <material>carbon steel</material>
+    <speed>0.3</speed>
+    <cuttingAbility>true</cuttingAbility>
+  </sword>
+  <sword id="222" name="short_sword">
+    <hitpoints>5</hitpoints>
+    <length>8</length>
+    <weight>9.3</weight>
+    <material>stainless steel</material>
+    <speed>0.6</speed>
+    <cuttingAbility>true</cuttingAbility>
+  </sword>
+  <sword id="333" name="knife">
+    <hitpoints>3</hitpoints>
+    <length>5</length>
+    <weight>5.8</weight>
+    <material>alloy steel</material>
+    <speed>0.8</speed>
+    <cuttingAbility>false</cuttingAbility>
+  </sword>
+</items>

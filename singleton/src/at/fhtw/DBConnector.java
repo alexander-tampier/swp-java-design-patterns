@@ -39,10 +39,12 @@ public final class DBConnector {
   }
 
   public static DBConnector getInstance() throws SQLException {
-    if (instance == null) {
-      instance = new DBConnector();
-    } else if (instance.getConnection().isClosed()) {
-      instance = new DBConnector();
+    synchronized (DBConnector.class) {
+      if (instance == null) {
+        instance = new DBConnector();
+      } else if (instance.getConnection().isClosed()) {
+        instance = new DBConnector();
+      }
     }
 
     return instance;
